@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Home</title>
+</head>
+
+<body onload="render();">
+    <div class="container-fluid">
+        <div id="wapper">
+            <div class="row" id="login">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <form action="" method="">
+                        <h2 class="head">๖ۣۜᵀᵃʳʳᵒᵗˢঔ</h2>
+                        <div class="form-field">
+                            <input type="text" id="name" class="form-input" placeholder=" " />
+                            <label for="name" class="form-label">Name</label>
+
+                        </div>
+                        <br>
+                        <div class="form-field">
+                            <input type="password" id="pwd" class="form-input" placeholder=" " />
+                            <label for="name" class="form-label">Password</label>
+
+                        </div>
+                        <br>
+                        <p class="note">admin - admin</p>
+                        <div class="form-field">
+                            <input type="button" id="startBtn" class="form-input" placeholder=" " value="LOGIN" />
+                        </div>
+                    </form>
+
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row" id="addsv">
+                <div class="col-md-4">
+                    <form action="" method="" class="form-addsv">
+                        <label for="name">Name</label>
+                        <input class="form-control" type="text" name="name" placeholder="Name">
+                        <span class="name_error"></span>
+
+                        <label for="mail">Mail</label>
+                        <input class="form-control" type="mail" name="mail" placeholder="Mail">
+                        <span class="mail_error"></span>
+
+                        <label for="phone">Phone</label>
+                        <input class="form-control" type="text" name="phone" placeholder="Phone">
+                        <span class="phone_error"></span>
+
+                        <label for="address">Address</label>
+                        <input class="form-control" type="text" name="address" placeholder="Address">
+                        <span class="address_error"></span>
+
+                        <label for="gender">Gender</label>
+                        <input type="radio" name="gender" id="male" value="1" checked>Male
+                        <input type="radio" name="gender" id="famale" value="2">Fable
+                        <input type="radio" name="gender" id="custom" value="3">Custom
+
+                        <input type="button" id="btnAdd" class="form-input" placeholder=" " value="ADD" />
+                    </form>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-6">
+                    <h2 class="head" style="text-align: left!important;">๖ۣۜᵀᵃʳʳᵒᵗˢঔ</h2>
+                    <table class="table table-hover">
+                    </table>
+                </div>
+                <div class="col-md-1">
+                    <button type="button" class="btn btn-outline-danger" id="endBtn" onclick="logout();">LOGOUT</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script>
+    <script src="./js/ui.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
