@@ -12,9 +12,10 @@ public class UserModel extends AbstractModel {
 	public UserModel() {
 		
 	}
-	public UserModel(String userName, String passWord, String fullName,
-			Byte status, Long roleId, Timestamp createdDate, Timestamp modifiedDate,
-			String createdBy, String modifiedBy) {
+	public UserModel(Long id, String userName, String passWord, String fullName,
+			Byte status, Long roleId, Timestamp createdDate, Timestamp modifiedDate, String createdBy, String modifiedBy) {
+		
+		super(id, createdDate, modifiedDate, createdBy, modifiedBy);
 		this.userName = userName;
 		this.passWord = passWord;
 		this.fullName = fullName;
@@ -22,6 +23,7 @@ public class UserModel extends AbstractModel {
 		this.roleId = roleId;
 	}
 	public UserModel(UserModel usrM) {
+		super(usrM.id, usrM.createdDate, usrM.modifiedDate, usrM.passWord, usrM.fullName);
 		this.userName = usrM.userName;
 		this.passWord = usrM.passWord;
 		this.fullName = usrM.fullName;
@@ -58,6 +60,5 @@ public class UserModel extends AbstractModel {
 	public void setRoleId(Long roleId) {
 		this.roleId = roleId;
 	}
-	
 	
 }
