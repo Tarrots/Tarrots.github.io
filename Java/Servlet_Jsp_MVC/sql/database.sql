@@ -75,3 +75,4 @@ ALTER TABLE comments ADD CONSTRAINT fk_comments_user FOREIGN KEY (usrId) REFEREN
 ALTER TABLE comments ADD CONSTRAINT fk_comment_news FOREIGN KEY (newsId) REFERENCES news(id);
 
 # Executed!!!
+# SELECT * FROM category;
