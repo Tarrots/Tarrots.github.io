@@ -43,7 +43,7 @@ public class CategoryDAO implements ICategoryDAO{
 				while(resultSet.next())
 				{
 					CategoryModel category = new CategoryModel();
-					category.setID(resultSet.getLong(0));
+					//category.setID(resultSet.getLong(0));
 				}
 			} catch (SQLException e) {
 				e.printStackTrace();
