@@ -90,17 +90,9 @@ body {
     margin-left: 25%;
     margin-right: 25%;
     width: 50%;
-    background-color: #777777;
-    font-weight: bold;
-}
-
-.form-input[type=button]:hover {
-    margin-left: 25%;
-    margin-right: 25%;
-    width: 50%;
-    color: #eee;
+    color: #fff;
     background-color: #157347;
-    border-color: #146c43;
+    font-weight: bold;
 }
 
 .note {
