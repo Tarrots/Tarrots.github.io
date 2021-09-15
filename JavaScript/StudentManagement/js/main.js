@@ -10,8 +10,10 @@ class main {
                 alert("Login successfully!");
                 this.startAddsv();
             } else {
-                location.reload();
                 alert("Enter the wrong account or password!\nTry it again!");
+                window.location.reload();
+                document.getElementById('name').value = "";
+                document.getElementById('pwd').value = "";
             }
 
         });
@@ -39,7 +41,6 @@ class main {
                 });
                 localStorage.setItem('student', JSON.stringify(student));
                 render();
-
             }
         });
     }
@@ -115,6 +116,10 @@ function render() {
                    </tr>`
     });
     document.getElementsByClassName('table-hover')[0].innerHTML = table;
+    document.getElementsByName('name')[0].value = "";
+    document.getElementsByName('mail')[0].value = "";
+    document.getElementsByName('phone')[0].value = "";
+    document.getElementsByName('address')[0].value = "";
 }
 
 function deletes(id) {
@@ -125,9 +130,11 @@ function deletes(id) {
 }
 
 function update(id) {
-    confirm('Button Edit developing!!');
+    confirm('Developing!!');
 }
 
 function logout() {
-    location.reload();
+    window.location.reload();
+    document.getElementById('name').value = "";
+    document.getElementById('pwd').value = "";
 }

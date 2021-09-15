@@ -10,11 +10,10 @@ public class UserModel extends AbstractModel {
 	private Long roleId;
 	
 	public UserModel() {
-		
+		super();
 	}
 	public UserModel(Long id, String userName, String passWord, String fullName,
 			Byte status, Long roleId, Timestamp createdDate, Timestamp modifiedDate, String createdBy, String modifiedBy) {
-		
 		super(id, createdDate, modifiedDate, createdBy, modifiedBy);
 		this.userName = userName;
 		this.passWord = passWord;
@@ -23,7 +22,7 @@ public class UserModel extends AbstractModel {
 		this.roleId = roleId;
 	}
 	public UserModel(UserModel usrM) {
-		super(usrM.id, usrM.createdDate, usrM.modifiedDate, usrM.passWord, usrM.fullName);
+		super(usrM.id, usrM.createdDate, usrM.modifiedDate, usrM.createdBy, usrM.modifiedBy);
 		this.userName = usrM.userName;
 		this.passWord = usrM.passWord;
 		this.fullName = usrM.fullName;
