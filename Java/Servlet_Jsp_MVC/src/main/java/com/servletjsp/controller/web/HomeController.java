@@ -11,17 +11,21 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.servletjsp.service.impl.ICategoryService;
+import com.servletjsp.service.impl.INewsService;
 
-@WebServlet(urlPatterns = {"/trang-chu"}) // CÃ³ thá»ƒ cÃ³ nhiá»�u url
+@WebServlet(urlPatterns = {"/trang-chu"}) // Có nhiều url
 public class HomeController extends HttpServlet  {
 	@Inject
 	private ICategoryService categoryS;
+	@Inject
+	private INewsService newsS;
 	private static final long serialVersionUID = 8933354549475736032L;
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		Long categoryId = 1L;
+		request.setAttribute("news", newsS.findByCategoryId(categoryId));
 		request.setAttribute("categories", categoryS.findAll());
 		RequestDispatcher rd = request.getRequestDispatcher("/views/web/home.jsp");
-		//  /decorators/web.jsp
 		rd.forward(request, response);
 	}
 	
