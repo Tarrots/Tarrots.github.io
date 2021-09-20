@@ -24,8 +24,6 @@ public class CategoryDAO implements ICategoryDAO {
 			e.printStackTrace();
 			return null;
 		}
-		
-
 	}
 
 	@Override
