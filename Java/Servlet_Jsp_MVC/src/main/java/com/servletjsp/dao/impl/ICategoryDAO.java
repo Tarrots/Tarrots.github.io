@@ -4,6 +4,6 @@ import java.util.List;
 
 import com.servletjsp.model.CategoryModel;
 
-public interface ICategoryDAO {
+public interface ICategoryDAO extends GenericDAO<CategoryModel> {
 	List<CategoryModel> findAll();
 }
