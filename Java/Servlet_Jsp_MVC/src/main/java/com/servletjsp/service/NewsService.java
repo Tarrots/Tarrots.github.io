@@ -16,4 +16,9 @@ public class NewsService implements INewsService {
 	public List<NewsModel> findByCategoryId(Long categoryId) {
 		return newsD.findByCategoryId(categoryId);
 	}
+	@Override
+	public NewsModel save(NewsModel newsM) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

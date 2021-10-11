@@ -1,6 +1,8 @@
 eclipse.preferences.version=1
 encoding//src/main/java/com/servletjsp/controller/admin/HomeController.java=UTF-8
 encoding//src/main/java/com/servletjsp/controller/web/HomeController.java=UTF-8
+encoding//src/main/java/com/servletjsp/dao/AbstractDAO.java=UTF-8
 encoding//src/main/java/com/servletjsp/dao/CategoryDAO.java=UTF-8
 encoding//src/main/java/com/servletjsp/dao/NewsDAO.java=UTF-8
+encoding//src/main/java/com/servletjsp/dao/impl/GenericDAO.java=UTF-8
 encoding//src/main/webapp/commom/libs.jsp=UTF-8
